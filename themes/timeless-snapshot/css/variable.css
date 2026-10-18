@@ -1,0 +1,26 @@
+:root {
+    --transition-counter-bg: #E8D9C4;
+    --counter-bg: #EDEAA1;
+    --counter-color: #7C151D;
+    --counter-radius: 5px;
+    --counter-line-bg: #E8D9C4;
+    --counter-line-size: 0.1px;
+    --invitation-bg : #000;
+    --invitation-bg-light: #F5F8FF;
+    --text-primary: #F8F4E8;
+    --text-primary-hover: #773123;
+    --text-secondary: #000;
+    --bs-primary: #000;
+    --bs-primary-hover: #000;
+    --bg-primary: #000;
+    --bg-primary-dark: #B11117;
+    --bs-primary-light: #570D09FF;
+    --bg-secondary: #F8F4E8;
+    --bs-secondary: #000;
+    --bs-secondary-hover: #000;
+    --bs-secondary-light: #E8D9C4;
+    --bs-text-light: #E8D9C4;
+    --tone-color-1: #F7C56B;
+    --tone-color-2: #7C151D;
+    --tone-color-3: #F8F4E8;
+}

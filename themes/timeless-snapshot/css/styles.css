@@ -1,0 +1,1507 @@
+
+.text-primary {
+    color: var(--text-primary) !important;
+}
+
+.text-primary-light {
+    color: var(--bs-text-light) !important;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.text-accent {
+    color: var(--tone-color-2) !important;
+}
+
+.text-color-1 {
+    color: var(--tone-color-1) !important;
+}
+
+.text-color-2 {
+    color: var(--tone-color-2) !important;
+}
+
+.text-color-3 {
+    color: var(--tone-color-3) !important;
+}
+
+.text-color-4 {
+    color: var(--tone-color-4) !important;
+}
+
+.text-color-5 {
+    color: var(--tone-color-5) !important;
+}
+
+.bg-color-1 {
+    background-color: var(--tone-color-1) !important;
+}
+
+.bg-color-2 {
+    background-color: var(--tone-color-2) !important;
+}
+
+.bg-color-3 {
+    background-color: var(--tone-color-3) !important;
+}
+
+.bg-color-4 {
+    background-color: var(--tone-color-4) !important;
+}
+
+.bg-color-5 {
+    background-color: var(--tone-color-5) !important;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(0deg, var(--bs-primary) 0%, #BC830B59 70%, transparent 100%) !important;
+}
+
+.bg-primary {
+    background-color: var(--bg-primary) !important;
+}
+
+.bg-primary-dark {
+    background-color: var(--invitation-bg) !important;
+}
+
+.bride-sub {
+    color: var(--text-primary) !important;
+}
+
+.bride-content {
+    background-color: var(--bg-primary);
+    /* outline: 4px solid var(--tone-color-4); */
+    border-radius: 500px 500px 0 0;
+    padding-top: 75px;
+}
+
+.cloud-top {
+    width: 30%;
+    top: 0;
+    left: 0;
+    transform: translateY(-112%);
+}
+
+.cloud-bottom {
+    width: 30%;
+    bottom: 0;
+    right: calc(-13%);
+    transform: translateY(67%);
+}
+
+.flower-schedule-left{
+    width: 18%;
+    top: 0;
+    left: -6%;
+    transform: translateY(-43%);
+}
+
+.flower-schedule-right{
+    width: 18%;
+    top: 0;
+    right: -4%;
+    transform: translateY(-13%);
+}
+
+.line-schedule-left{
+    width: 18%;
+    bottom: 0;
+    left: -7%;
+    transform: translateY(-43%);
+}
+
+.line-schedule-right{
+    width: 18%;
+    bottom: 0;
+    right: -4%;
+    transform: translateY(-13%);
+}
+
+.bg-primary-light {
+    background-color: var(--bs-primary-light) !important;
+    color: var(--bs-primary) !important;
+}
+
+.bg-welcome{
+    padding-top: min(18%, 40px);
+    padding-bottom: min(18%, 40px);
+}
+
+.bg-black-transparent {
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+.text-line {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.text-line::after {
+    content: "";
+    flex: 1;
+    margin-left: 10px;
+    border-bottom: 2px solid white;
+}
+
+.text-line-start {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.text-line-start::before {
+    content: "";
+    flex: 1;
+    margin-left: 0;
+    border-bottom: 2px solid white;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.text-size-title-backdrop {
+    font-size: calc(var(--font1) * 1.4) !important;
+}
+.text-size-content-backdrop {
+    font-size:  calc(var(--font3) * 1.4) !important;
+}
+
+.backdrop-wrapper {
+    position: relative; /* Wajib, agar garis tahu posisi absolutnya */
+    display: inline-block; /* Agar kontainer pas dengan ukuran gambar */
+    overflow: hidden; /* Opsional: agar garis tidak meluber keluar */
+}
+
+.backdrop-wrapper::before,
+.backdrop-wrapper::after {
+    content: ""; /* Wajib ada untuk pseudo-element */
+    position: absolute; /* Posisikan garis secara presisi */
+    left: 3%; /* Beri sedikit jarak dari kiri (sesuaikan %-nya) */
+    right: 3%; /* Beri sedikit jarak dari kanan (sesuaikan %-nya) */
+    height: 2px; /* Tebal garis putih */
+    background-color: var(--text-primary); /* Warna garis putih pekat */
+    z-index: 10; /* Pastikan garis berada di atas gambar dan teks */
+}
+
+.backdrop-wrapper::before {
+    top: 15px; /* Jarak dari batas atas kontainer (sesuaikan) */
+}
+
+.backdrop-wrapper::after {
+    bottom: 15px; /* Jarak dari batas bawah kontainer (sesuaikan) */
+}
+
+#container-content {
+    position: relative;
+    width: 100%;
+}
+
+.bg-content {
+    position: relative;
+    background: none !important;
+}
+
+.bg-content::before {
+    content: "";
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    margin-bottom: -100vh;
+}
+
+.windSway{
+    transform-origin: top center;
+    backface-visibility: hidden;
+    will-change: transform;
+
+    animation: windSway 3s ease-in-out infinite;
+}
+
+.windSway-top{
+    transform-origin: bottom center;
+    backface-visibility: hidden;
+    will-change: transform;
+
+    animation: windSway 3s ease-in-out infinite;
+}
+
+.img-spinner{
+    animation: spinning 20s linear infinite;
+}
+
+.img-spinner-reverse{
+    animation: spinning-reverse 20s linear infinite;
+}
+
+.bg-tone-2{
+    background-color: var(--tone-color-2) !important;
+}
+
+.bg-secondary{
+    background-color: var(--bg-secondary) !important;
+}
+
+#gift_registry .btn-primary{
+    background-color: white !important;
+    color: black !important;
+}
+
+#gift_registry .btn-primary .fas{
+    color: var(--text-secondary) !important;
+}
+
+.text-gold {
+    color: var(--bs-primary) !important;
+}
+
+.text-color-2{
+    color: var(--tone-color-2) !important;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: black;
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px arial;
+    color: var(--bs-primary);
+}
+
+.bg-navigation {
+    background-color: var(--bg-secondary);
+    border-radius: 30px !important;
+    margin-bottom: 10px;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary) !important;
+}
+
+.bg-secondary-light {
+    background-color: var(--tone-color-1) !important;
+    color: white !important;
+}
+
+#modalInvitation .modal-content {
+    background-color: var(--invitation-bg);
+}
+
+html body {
+    background-color: var(--bg-primary) !important;
+    font-family: "Montserrat", serif;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, bottom left;
+    background-attachment: fixed;
+}
+
+#container-content .card{
+    background-color: unset;
+}
+
+.font-title {
+    font-family: "Playball", cursive;
+}
+
+.font-content {
+    font-family: "Montserrat", cursive;
+}
+
+.gradient-cover{
+    background: linear-gradient(180deg, rgba(248,244,232,0.3) 0%, rgba(0,0,0,0.7) 85%);
+}
+
+#cover .title,
+#modalInvitation .title {
+    font-size: calc(var(--font1) * 1.5) !important;
+}
+
+#modalInvitation .and-sparator {
+    margin: calc(var(--font1) * -0.7);
+    font-size: calc(var(--font1) * 1.8) !important;
+}
+
+#cover .and-sparator {
+    margin: calc(var(--font1) * -0.7);
+    font-size: calc(var(--font1) * 1.8) !important;
+}
+
+.img-flip-x {
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+.img-flip-y {
+    transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -moz-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+}
+
+#cover .sub-title {
+    font-size: 28px !important;
+}
+
+.badge-countdown {
+    background-color: var(--tone-color-3) !important;
+    color: var(--bs-secondary) !important;
+}
+
+.schedule-bg {
+    border-radius: 500px 500px 0 0;
+    background: var(--tone-color-5);
+}
+
+.top-round-bg {
+    border-radius: 500px 500px 0 0;
+}
+
+#countdown .badge-primary {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.label-countdown {
+    margin-left: 0;
+}
+
+.splide__arrow {
+    background: var(--bg-primary);
+}
+
+/* .splide--nav,
+> .splide__slider,
+> .splide__track,
+> .splide__list,
+> .splide__slide.is-active,
+.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+    border: none !important;
+} */
+
+.splide__arrow svg {
+    fill: white !important;
+}
+
+.splide--nav>.splide__slider>.splide__track>.splide__list>.splide__slide.is-active, .splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
+    border: none !important;
+}
+
+.form-control.form-control-solid {
+    background-color: var(--invitation-bg) !important;
+    border-color: #757575;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropdown.show > .form-control.form-control-solid,
+.form-control.form-control-solid:active,
+.form-control.form-control-solid.active,
+.form-control.form-control-solid:focus,
+.form-control.form-control-solid.focus {
+    background-color: var(--invitation-bg);
+    border-color: var(--bs-primary);
+}
+
+.bg-avatar .symbol {
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    outline: 4px solid var(--bs-secondary);
+    outline-offset: -12px;
+}
+
+.border-avatar {
+    position: fixed;
+    height: 150px !important;
+    width: auto !important;
+    left: -31px;
+    z-index: -1;
+}
+
+.border-secondary{
+    border-color: white !important;
+}
+
+.btn-secondary,
+.btn-secondary .bi,
+.btn-secondary .fas {
+    background-color: var(--text-primary) !important;
+    color: black !important;
+}
+
+.btn-light,
+.btn-light .bi,
+.btn-light .fas {
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+
+#ig-stories .bi {
+    background-color: var(--bs-secondary-light) !important;
+    color: var(--bs-secondary) !important;
+}
+
+.badge-primary {
+    color: var(--invitation-bg) !important;
+}
+
+.nav-link {
+    color: var(--text-secondary) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: var(--text-primary) !important;
+    background-color: var(--bg-primary) !important;
+    border-radius: 50px;
+    width: 75px;
+}
+
+.gradient-white {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 81%, rgba(0, 0, 0, 0) 100%);
+}
+
+.svg-icon.svg-icon-primary svg [fill]:not(.permanent):not(g) {
+    fill: var(--invitation-bg) !important;
+}
+
+.border-bride{
+    border-width: 10px !important;
+}
+
+.border-radius-half-rounded {
+    border-radius: 1000px 1000px 0 0;
+}
+
+.border-radius-half-bottom-rounded {
+    border-radius: 0 0 1000px 1000px;
+}
+
+.bride-img {
+    aspect-ratio: 1 / 1.27 !important;
+    object-fit: cover !important; /* Ensures the image maintains its aspect ratio */
+    background-size: cover !important; /* Makes the background image cover the entire div */
+    background-position: center !important; /* Centers the background image */
+    background-repeat: no-repeat !important; /* Prevents the image from repeating */
+}
+
+.welcome-img-square {
+    aspect-ratio: 4 / 5 !important;
+    object-fit: cover !important; /* Ensures the image maintains its aspect ratio */
+    background-size: cover !important; /* Makes the background image cover the entire div */
+    background-position: center !important; /* Centers the background image */
+    background-repeat: no-repeat !important; /* Prevents the image from repeating */
+}
+
+.border-schedule {
+    position: relative;
+    padding: 0 52px; /* Beri ruang agar konten tidak tertimpa border */
+}
+
+/* Memastikan AOS bekerja pada elemen absolut */
+[data-aos] {
+    pointer-events: none;
+}
+.aos-animate {
+    pointer-events: auto;
+}
+
+.bg-primary {
+    background-color: var(--bg-primary) !important;
+}
+
+.bg-primary-dark {
+    background-color: var(--bg-primary-dark) !important;
+}
+
+.height-welcome {
+    height: calc(100% - 168px);
+}
+
+.background-cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.bg-quote{
+    background-image: url('../img/quote.png'), url('../img/quote-2.png');
+    background-repeat: no-repeat !important;
+    background-position: top left, bottom right;
+    padding: min(17%, 33px) min(20%, 33px) !important;
+}
+
+.lovestory-container {
+    padding: 2rem 2.5rem;
+}
+
+.timeline .timeline-line {
+    border-left-color: var(--bs-secondary);
+}
+
+.bg-timeline {
+    color: white !important;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+.timeline-badge > .fa {
+    background-color: unset !important;
+    color: var(--text-primary) !important;
+}
+
+.timeline-label:before {
+    left: -2px;
+    top: 20px;
+    border-left: 4px dotted white;
+    background-color: unset !important;
+}
+
+.timeline-label .timeline-badge {
+    background: none;
+    border: 0 !important;
+}
+
+.border-primary {
+    border-color: var(--bg-primary) !important;
+}
+.border-secondary {
+    border-color: var(--bg-secondary) !important;
+}
+
+.border-wish{
+    border-color: var(--text-primary) !important;
+}
+
+.border-black {
+    border-color: #000000 !important;
+}
+
+.bg-custom {
+    background-color: var(--bg-primary) !important;
+    color: white !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.padding-welcome {
+    position: relative;
+    padding: 10px 20px; /* Padding for content */
+    margin: 20px; /* Margin for spacing */
+}
+
+.frame-border {
+    position: relative;
+    margin: 0 20px 0 20px;
+}
+
+.frame-border-top {
+    position: relative;
+    padding: 20px; /* Padding for content */
+}
+
+.frame-border-top::before {
+    content: '';
+    position: absolute;
+    top: 20px; /* Position at the top */
+    left: 119px; /* Adjust as needed */
+    width: calc(100% - 240px); /* Width of the border */
+    height: 4px; /* Height of the border */
+    background-color: var(--bs-primary); /* Border color */
+}
+
+.frame-border-full-top {
+    position: relative;
+    padding: 20px; /* Padding for content */
+}
+
+.frame-border-full-top::before {
+    content: '';
+    position: absolute;
+    top: 60px; /* Position at the top */
+    left: 119px; /* Adjust as needed */
+    width: 100%; /* Width of the border */
+    height: 4px; /* Height of the border */
+    background-color: var(--bs-primary); /* Border color */
+}
+
+.frame-border-full-bottom {
+    position: relative;
+    padding: 20px; /* Padding for content */
+}
+
+.frame-border-full-bottom::before {
+    content: '';
+    position: absolute;
+    bottom: 60px; /* Position at the bottom */
+    left: 119px; /* Adjust as needed */
+    width: 100%; /* Width of the border */
+    height: 4px; /* Height of the border */
+    background-color: var(--bs-primary); /* Border color */
+}
+
+.frame-margin {
+    margin-top: -60px;
+}
+
+.m-border {
+    margin-left: 2vh !important;
+    margin-right: 2vh !important;
+}
+
+/* .btn.btn-secondary {
+    color: #ffffff;
+    border-color: var(--bs-secondary) !important;
+    background-color: var(--bs-secondary) !important;
+} */
+.rounded {
+    border-radius: 30px !important;
+    overflow: hidden;
+}
+
+.rounded-sm {
+    border-radius: 10px !important;
+}
+
+.rounded-xxl {
+    border-radius: 50px !important;
+}
+
+.rounded-1 {
+    border-radius: 16px !important;
+}
+
+.rounded-2 {
+    border-radius: 24px !important;
+}
+
+.text-light {
+    color: var(--bs-text-light) !important;
+}
+
+.animate-zoom-in-out {
+    animation: zoom-in-zoom-out 2s ease infinite;
+    transform-origin: bottom center;
+}
+
+.bg-invitation {
+    background-color: var(--invitation-bg);
+}
+
+.bg-invitation-light {
+    background-color: var(--invitation-bg-light);
+}
+
+.bg-invitation-dark {
+    background-color: var(--invitation-bg);
+}
+
+.btn-primary,
+.btn-primary .bi,
+.btn-primary .fas {
+    color: var(--text-primary) !important;
+}
+
+#bride .btn-primary,
+#bride .btn-primary .bi,
+#bride .btn-primary .fas {
+    background-color: white !important;
+    color: var(--bg-primary) !important;
+}
+
+#modalInvitation .btn-primary,
+#modalInvitation .btn-primary .bi,
+#modalInvitation .btn-primary .fas {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+
+.schedule-address {
+    margin-bottom: 10px;
+}
+
+#schedule .btn-primary,
+#schedule .btn-primary .bi,
+#schedule .btn-primary .fas {
+    color: var(--text-primary) !important;
+    background-color: var(--bg-primary) !important;
+}
+
+#schedule .sparator-line {
+    border-bottom: 1px dashed var(--tone-color-3) !important;
+}
+
+#schedule .btn-secondary,
+#schedule .btn-secondary .bi,
+#schedule .btn-secondary .fas {
+    color: black !important;
+    background-color: var(--text-primary) !important;
+}
+
+#schedule .sparator-line {
+    border-bottom: 1px dashed var(--tone-color-3) !important;
+}
+
+#wish button[type="submit"].btn-primary,
+#wish button[type="submit"].btn-primary .bi,
+#wish button[type="submit"].btn-primary .fas {
+    color: #FFF !important;
+    background-color: var(--text-secondary) !important;
+}
+
+#wish ::placeholder {
+    color: var(--text-primary) !important;
+}
+
+#wish hr {
+    padding: 0;
+    margin: 0;
+    background: unset !important;
+    border: 1px dashed currentColor;
+}
+
+.btn-rsvp {
+    color: var(--tone-color-3) !important;
+    background-color: var(--bg-primary) !important;
+}
+
+.btn-check:checked + .btn.btn-secondary, .btn-check:active + .btn.btn-secondary, .btn.btn-secondary:focus:not(.btn-active), .btn.btn-secondary:hover:not(.btn-active), .btn.btn-secondary:active:not(.btn-active), .btn.btn-secondary.active, .btn.btn-secondary.show, .show > .btn.btn-secondary {
+    color: black;
+    background-color: var(--text-primary) !important;
+}
+
+.square-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.square-bottom {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.square-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.square-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.square-bottom-left {
+    border-bottom-left-radius: 0 !important;
+}
+
+.right-0 {
+    right: 0;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+@keyframes move-bottom-to-top {
+    from {
+        background-position: 0 100%;
+    }
+    to {
+        background-position: 0 0%;
+    }
+}
+
+@keyframes move-right-to-left {
+    from {
+        background-position: 100% top;
+    }
+    to {
+        background-position: 0% top;
+    }
+}
+
+@keyframes popupUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+li.splide__slide {
+    width: 120px;
+    height: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px !important;
+}
+
+/* .splide--nav,
+> .splide__slider,
+> .splide__track,
+> .splide__list,
+> .splide__slide,
+.splide--nav > .splide__track > .splide__list > .splide__slide {
+    border: 0;
+}
+
+splide--nav,
+> .splide__slider,
+> .splide__track,
+> .splide__list,
+> .splide__slide.is-active,
+.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+    border: 3px solid var(--bs-primary);
+} */
+
+/*For IG Story template*/
+#capture.frame,
+#capture.frame .text-primary {
+    color: var(--text-primary) !important;
+}
+
+#capture.frame .bg-primary {
+    background: var(--bg-secondary) !important;
+    color: var(--text-secondary) !important;
+}
+
+#ig-story .font-title.text-primary {
+    color: white !important;
+}
+
+#ig-story a.btn.btn-primary.btn-flex.flex-column.w-100.mb-5.fs-7 {
+    background-color: var(--text-primary);
+    color: var(--text-primary) !important;
+}
+
+#ig-story a.btn.btn-primary.btn-flex.flex-column.w-100.mb-5.fs-7 span {
+    color: var(--text-primary) !important;
+}
+
+#ig-stories .text-center.aos-init.aos-animate {
+    color: white !important;
+}
+
+#ig-stories .btn-primary {
+    background-color: white !important;
+    color: var(--bg-primary) !important;
+    border-radius: 20px !important;
+}
+
+#ig-stories .bi {
+    background-color: transparent !important;
+    color: var(--text-secondary) !important;
+}
+
+#ig-story a.btn.btn-primary.btn-flex.flex-column.w-100.mb-5.fs-7 span {
+    color: var(--text-secondary) !important;
+}
+
+#ig-story .ig-story-template-label,
+#ig-story .ig-story-template-title,
+#ig-story .ig-story-template-footer {
+    color: var(--text-primary) !important;
+}
+
+/* .btn.btn-secondary:hover:not(.btn-active) {
+    background-color: var(--bs-secondary-hover) !important;
+} */
+.btn.btn-primary .svg-icon svg [fill]:not(.permanent):not(g) {
+    transition: fill 0.3s ease;
+    fill: var(--bg-secondary);
+}
+
+#bride .btn.btn-primary .svg-icon svg [fill]:not(.permanent):not(g) {
+    transition: fill 0.3s ease;
+    fill: var(--bg-primary);
+}
+
+.left-0 {
+    left: 0 !important;
+}
+
+.frame-bridge-bottom img {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    height: auto;
+    width: 60%;
+}
+
+.mr-15 {
+    margin-right: 3.75rem !important;
+}
+
+.ml-10 {
+    margin-left: 2.5rem !important;
+}
+
+.pl-10 {
+    padding-left: 2.5rem !important;
+}
+
+.card-shadow-lovestory {
+    box-shadow: 0 0 20px 0 rgb(7 112 4 / 30%);
+    border: 10px var(--bs-secondary-light) solid;
+    background-color: var(--bs-secondary-light);
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 6px #000;
+}
+
+.border-primary-wishes {
+    border: 1px var(--bs-primary) solid;
+}
+
+.flip-image {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-image {
+        height: 88px !important;
+    }
+}
+
+.rounded-bottom-left {
+    border-radius: 0 0 0 30px !important;
+    overflow: hidden;
+}
+
+.rounded-bottom-right {
+    border-radius: 0 0 30px 0 !important;
+    overflow: hidden;
+}
+
+.square-image {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* 3/4 = 0.75 for a 4:3 aspect ratio */
+    /* = width for a 1:1 aspect ratio */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.container-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-rounded {
+    background-color: var(--invitation-bg);
+    border-radius: 30px !important;
+    margin-bottom: 10px;
+}
+
+
+.rounded-top {
+    border-top-left-radius: 48px !important;
+    border-top-right-radius: 48px !important;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 50vw !important;
+    border-bottom-right-radius: 50vw !important;
+}
+
+.min-h-rsvp {
+    min-height: 200px !important;
+}
+
+.min-h-80vh {
+    min-height: 80vh !important;
+}
+
+.min-h-85vh {
+    min-height: 85vh !important;
+}
+
+.min-h-90vh {
+    min-height: 90vh !important;
+}
+
+.min-h-95vh {
+    min-height: 95vh !important;
+}
+
+.min-h-100vh {
+    min-height: 100vh !important;
+}
+
+#modalGift .btn-light,
+#modalQR .btn-light {
+    color: white !important;
+    background-color: var(--bs-primary) !important;
+}
+
+#modalGift .accordion-button:not(.collapsed) {
+    color: var(--bs-primary);
+    background-color: initial;
+}
+
+#text-address-modal-gift {
+    color: black !important;
+}
+
+.bottom-15 {
+    bottom: 15px !important;
+}
+
+.right-10 {
+    right: 2.5rem !important;
+}
+
+.left-40 {
+    left: 40px !important;
+}
+
+.text-color-secondary {
+    color: var(--bg-secondary) !important;
+}
+
+.border-headline {
+    border-top: 1px var(--text-primary) solid;
+    border-bottom: 5px var(--text-primary) solid;
+    border-color: var(--text-primary);
+}
+
+.border-footer {
+    border-top: 1px var(--text-primary) solid;
+    border-color: var(--text-primary);
+}
+
+.border-content {
+    border-top: 2px var(--text-primary) solid;
+    border-bottom: 2px var(--text-primary) solid;
+    border-color: var(--text-primary);
+}
+
+.image-frame-size {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.image-frame-border {
+    border: 6px solid black; /* The inner, bold border */
+    outline: 2px solid black; /* The outer, thinner border */
+    outline-offset: 3px; /* Position the outline to overlap the border */
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    overflow: hidden;
+}
+
+.image-frame-border-thin {
+    border: 3px solid var(--tone-color-3); /* The inner, bold border */
+    outline: 2px solid var(--tone-color-3); /* The outer, thinner border */
+    outline-offset: 3px; /* Position the outline to overlap the border */
+}
+
+.overlap-image {
+    bottom: -23px;
+    right: -28px;
+}
+
+.min-h-streaming {
+    min-height: 412px;
+}
+
+.bg-flower-top {
+    position: relative;
+    top: 120px;
+    width: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-flower-bottom-left {
+    position: absolute;
+    left: -46px;
+    bottom: -53px;
+}
+
+.bg-flower-bottom-right {
+    position: absolute;
+    right: -46px;
+    bottom: -53px;
+}
+
+.bg-card-timeline {
+    background-color: var(--bs-secondary-light) !important;
+    color: var(--bs-text-light) !important;
+}
+
+.border-radius-0 {
+    border-radius: 0 !important;
+}
+
+.border-radius-1 {
+    border-radius: 0 !important;
+}
+
+.ml-10 {
+    margin-left: 1rem !important;
+}
+
+.mr-10 {
+    margin-right: 1rem !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+.w-80 {
+    width: 80% !important;
+}
+.w-90 {
+    width: 90% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.transform-frame-1 {
+    transform: rotate(90deg);
+}
+
+.transform-frame-2 {
+    transform: rotate(270deg);
+}
+
+.transform-frame-3 {
+    transform: rotate(180deg);
+}
+
+.story-img {
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important; /* Ensures the image maintains its aspect ratio */
+    background-size: cover !important; /* Makes the background image cover the entire div */
+    background-position: center !important; /* Centers the background image */
+    background-repeat: no-repeat !important; /* Prevents the image from repeating */
+}
+
+.bridge-img-square {
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important; /* Ensures the image maintains its aspect ratio */
+    background-size: cover !important; /* Makes the background image cover the entire div */
+    background-position: center !important; /* Centers the background image */
+    background-repeat: no-repeat !important; /* Prevents the image from repeating */
+}
+
+
+a {
+    color: var(--bg-primary);
+    text-decoration: none;
+}
+
+.welcome-background {
+    height: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.cover-frame {
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 250px;
+    aspect-ratio: 1 / 1 !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cover-frame > img {
+    border-radius: 250px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1 !important;
+    background-color: var(--tone-color-3);
+    border: 4px var(--tone-color-3) solid;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-light-primary {
+    color: var(--bs-primary-light) !important;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0 0 0 0 rgba(76, 87, 125, 0) !important;
+}
+
+.card-gift {
+    background-color: var(--invitation-bg);
+    border-radius: 30px !important;
+    margin-bottom: 10px;
+    box-shadow: 0 0 4px 0 rgba(76, 87, 125, 0.5) !important;
+}
+
+.cover-blur-effect {
+    background-color: rgba(10, 10, 10, 0.3);
+    padding: 1.25rem 0 1.25rem 0 !important;
+}
+
+.shadow-title {
+    text-shadow: 0 4px 4px var(--tone-color-4) !important;
+}
+
+.countdown-frame {
+    background-color: var(--bs-secondary);
+    border-top-left-radius: 50vh;
+    border-bottom-left-radius: 50vh;
+    border-right: 0;
+    color: var(--bs-primary);
+}
+
+#cover #countdown .text-size-content {
+    font-size: var(--font4) !important;
+}
+
+#sosmed-1 .btn-icon.btn-primary,
+#sosmed-2 .btn-icon.btn-primary {
+    background-color: white !important;
+}
+
+.parallelogram {
+    --deg: 10deg;
+    transform: skew(var(--deg)) !important;
+    -webkit-transform: skew(var(--deg)) !important;
+    -moz-transform: skew(var(--deg)) !important;
+    -o-transform: skew(var(--deg)) !important;
+    background: var(--bs-primary-light);
+    border-radius: 16px;
+}
+
+.parallelogram > * {
+    --deg: -10deg;
+    transform: skew(var(--deg)) !important;
+    -webkit-transform: skew(var(--deg)) !important;
+    -moz-transform: skew(var(--deg)) !important;
+    -o-transform: skew(var(--deg)) !important;
+}
+
+.self-center {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.shake-vertical {
+    -webkit-animation: shake-vertical 15s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+    animation: shake-vertical 15s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+}
+
+#gallery .row > * {
+    padding-right: calc(0.5rem * 0.5);
+    padding-left: calc(0.5rem * 0.5);
+    margin-top: 0.5rem;
+}
+
+.shake-bottom {
+    -webkit-animation: shake-bottom 40s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+    animation: shake-bottom 40s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+}
+
+.shake-bottom-reverse {
+    -webkit-animation: shake-bottom-reverse 40s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+    animation: shake-bottom-reverse 40s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite alternate both;
+}
+
+#ig-story-title {
+    font-size: var(--font1) !important;
+}
+
+.svg-icon.svg-icon-light [fill]:not(.permanent):not(g) {
+    fill: var(--text-secondary) !important;
+}
+
+#prokes .bg-primary {
+    background-color: var(--bg-secondary) !important;
+}
+
+.vibrate-1-10s {
+    -webkit-animation: vibrate-1 10s linear infinite both;
+    animation: vibrate-1 10s linear infinite both;
+}
+
+.vibrate-1-5s {
+    -webkit-animation: vibrate-1 5s linear infinite both;
+    animation: vibrate-1 5s linear infinite both;
+}
+
+.vibrate-1-8s {
+    -webkit-animation: vibrate-2 8s linear infinite both;
+    animation: vibrate-2 8s linear infinite both;
+}
+
+.vibrate-1-15s {
+    -webkit-animation: vibrate-1 15s linear infinite both;
+    animation: vibrate-1 15s linear infinite both;
+}
+
+.shake-vertical {
+    -webkit-animation: shake-vertical 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: shake-vertical 20s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-vertical-delay-1 {
+    -webkit-animation: shake-vertical 23s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: shake-vertical 23s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-vertical-delay-2 {
+    -webkit-animation: shake-vertical 25s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: shake-vertical 25s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-vertical-delay-3 {
+    -webkit-animation: shake-vertical 27s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: shake-vertical 27s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-vertical-reverse {
+    -webkit-animation: shake-vertical 18s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+    animation: shake-vertical 18s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+.pulsate-fwd {
+    -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+    animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+.pulsate-fwd-5s {
+    -webkit-animation: pulsate-fwd 5s ease-in-out infinite both;
+    animation: pulsate-fwd 5s ease-in-out infinite both;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+}
+
+hr:not([size]) {
+    height: 1px;
+}
+
+.hr-line {
+    border: none;
+    height: 5px; /* Thickness of the line */
+    background-color: currentColor; /* Color of the line */
+    width: 100%; /* Full width */
+}
+
+.animation-pop-up{
+    transform: translateY(100%);
+    opacity: 0;
+
+    animation: popupUp 1s ease-out forwards;
+}
+
+
+@media screen and (max-width: 378px) and (max-height: 668px) {
+    .cover-frame {
+        width: 90% !important;
+    }
+
+    #cover .title,
+    #modalInvitation .title {
+        font-size: calc(var(--font1)) !important;
+    }
+
+    #modalInvitation .and-sparator {
+        margin: calc(var(--font1) * -1.2);
+        font-size: calc(var(--font1) * 1.4) !important;
+    }
+}
+
+#mitra-container {
+    color: var(--tone-color-3) !important;
+    margin-bottom: 0 !important;
+}
+
+#mitra-container .text-dark,
+#mitra-container .bi-geo-alt-fill {
+    color: var(--tone-color-3) !important;
+}
+
+.container-limited-event{
+    justify-content: unset !important;
+}
+
+#limited-event{
+    background-color: rgba(248, 244, 232, 0.05);
+    border-color: var(--text-primary) !important;
+}
