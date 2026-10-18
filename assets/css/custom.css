@@ -1,0 +1,33 @@
+@media (min-width: 992px) {
+    .header-fixed.toolbar-fixed .wrapper {
+        padding-top: 96px;
+    }
+    .content {
+        padding: 0 0;
+    }
+}
+.heart {
+    color: #e25555;
+}
+
+@media (max-width: 991.98px) {
+    .toolbar-enabled:not(.toolbar-tablet-and-mobile-fixed) .content {
+        padding-top: 15px;
+    }
+}
+
+.select2-container--bootstrap5 .select2-selection--single .select2-selection__rendered {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #020202;
+}
+@media (max-width: 576px){
+    .col-xs-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
