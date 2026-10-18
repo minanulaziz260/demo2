@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Mick Caster';
+    src: url('fonts/Mick-Caster.eot');
+    src: url('fonts/Mick-Caster.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Mick-Caster.woff2') format('woff2'),
+         url('fonts/Mick-Caster.woff') format('woff'),
+         url('fonts/Mick-Caster.ttf')  format('truetype'),
+         url('fonts/Mick-Caster.svg#Mick Caster') format('svg');
+}
